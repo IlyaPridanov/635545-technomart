@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Илья Приданов](https://up.htmlacademy.ru/htmlcss/21/user/635545).
-* Наставник:[Сергей Козлов](https://htmlacademy.ru/profile/id27386).
+* Наставник:[Сергей Козлов](https://up.htmlacademy.ru/htmlcss/21/user/27386).
 
 ---
 
