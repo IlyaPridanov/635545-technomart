@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	
+	background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+	background:#f3f7f8;
+}
+
+.header-head {background:#293449;}
+
+.logo {
+	background-color:#ee3643;
+	
+	color: #ffffff;
+	font-family:'Cuprum', sans-serif;
+	font-size:24px;
+	line-height:24px;
+	font-weight:400;
+	text-transform:uppercase;
+	text-decoration:none;}
+
+.site-progress,
+.user-input {
+	list-style: none;
+}
+
+.site-progress a{
+	color: #ffffff;
+}
+
+.site-progress a:hover{
+	background-color: #212a3a;
+}
+
+.site-progress a:focus{
+	background-color: #161d29;
+}
+
+ .site-progress .order {
+	background-color: #63a63e;
+}
+.site-progress .order:hover {
+	background-color: #5fbb2d;
+}
+
+.site-progress .order:focus {
+	background-color: #518534;
+}
+
+.communications-present {
+	color:#ee3643;
+	font-size:16px;
+	line-height:23px;
+	font-style:italic;
+}
+
+.communications-tel {
+	color:#e9292a;
+	font-size:21px;
+	line-height:21px;
+}
+
+.communications-adres {
+	color:#32425c;
+	font-size:14px;
+	line-height:24px;
+}
+.user-input a{
+	color:#000000;
+	font-size:21px;
+	line-height:21px;
+	background-color: #ffffff;
+}
+
+.user-input a:hover{
+	color:#ee3643;
+}
+
+.user-input a:focus{
+	color:#dadada;
+}
+
+.main-navigation {
+	background-color: #32425c;
+}
+.site-navigation {
+	list-style: none;
+}
+.site-navigation a {
+	color:#ffffff;
+	font-size:17px;
+	line-height:17px;
+}
+.site-navigation a:hover {
+	background-color: #293449;
+}
+.site-navigation a:focus {
+	background-color: #293449;
+	color:#a1a4a8;
+}
+
+.footer-up {background:#32425c;}
+.footer-down {background:#293449;}
+.popproduct-caption {background:#f9f5f0;}

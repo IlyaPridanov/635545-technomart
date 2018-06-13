@@ -1,17 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	
 	<body>
 		<header class="main-header">
 			<div class="header-head">
 				<a href="index.html" class="logo">Техномарт</a>
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<label for="search">Поиск</label> 
-					<input type="search" name="search" id="search">
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<input type="search" name="search" id="search" placeholder="Поиск">
 				</form>
 				<ul class="site-progress">
 					<li><a href="#">Закладки:<span>0</span></a></li>
@@ -25,7 +27,7 @@
 				<p>г. Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
 				<div>
 					<span>Имя пользователя</span>
-					<button type="submit">Выход</button>
+					<a href="#" aria-label="Выход"></button>
 				</div>
 				<ul>
 					<li><a href="#">Мои заказы</a></li>
@@ -48,7 +50,7 @@
 		<main>
 			<h1 class="visually-hidden">Каталог магазина "Техномарт"</h1>
 			<ul>
-				<li><a href="index.html">Главная</a></li>
+				<li><a href="index.html" aria-label="Главная"></a></li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Инструмент</a></li>
 				<li><a href="#">Перфораторы</a></li>
@@ -56,34 +58,33 @@
 			<h2>Перфораторы</h2>
 			<section class="filter">
 				<h3>Фильтр</h3>
-				<form method="post" action="https://echo.htmlacademy.ru">
+				<form method="get" action="https://echo.htmlacademy.ru">
 					<fieldset>
 						<legend>Цена:</legend>
-						<input type="range" id="price" name="price" min="0" max="30000" 
-							step="500">
-						<p><span>0</span>-<span>30000</span></p>
+						<input id="price1" type="text" name="price" value="0">
+						<input id="price2" type="text" name="price" value="30000">
 					</fieldset>
 					<fieldset>
 						<legend>Производители:</legend>
 						<ul>
 							<li>
-								<input type="checkbox" name="bosch" id="bosch" checked>
+								<input type="checkbox" name="manufacturers[]" value="bosch" id="bosch" checked>
 								<label for="bosch">bosch</label>
 							</li>
 							<li>
-								<input type="checkbox" name="interscol" id="interscol">
+								<input type="checkbox" name="manufacturers[]" value="interscol" id="interscol">
 								<label for="interscol">Интерскол</label>
 							</li>
 							<li>
-								<input type="checkbox" name="makita" id="makita" checked>
+								<input type="checkbox" name="manufacturers[]" value="makita" id="makita" checked>
 								<label for="makita">makita</label>
 							</li>
 							<li>
-								<input type="checkbox" name="dewalt" id="dewalt">
+								<input type="checkbox" name="manufacturers[]" value="dewalt" id="dewalt">
 								<label for="dewalt">dewalt</label>
 							</li>
 							<li>
-								<input type="checkbox" name="hitachi" id="hitachi">
+								<input type="checkbox" name="manufacturers[]" value="hitachi" id="hitachi">
 								<label for="hitachi">hitachi</label>
 							</li>
 						</ul>
@@ -115,8 +116,8 @@
 						<li><a href="#">По функционалу</a></li>
 					</ul>
 					<ul>
-						<li><button type="submit">По убыванию</button></li>
-						<li><button type="submit">По возрастанию</button></li>
+						<li><a href="#" aria-label="По убыванию"></a></li>
+						<li><a href="#" aria-label="По возрастанию"></a></li>
 					</ul>
 				</div>
 				<ul>
@@ -221,10 +222,10 @@
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current"><a>1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">Следующая</a></li>
+					<li class="pagination-item pagination-item-current" aria-label="Первая страница каталога"><a>1</a></li>
+					<li class="pagination-item"><a href="#" aria-label="Вторая страница каталога">2</a></li>
+					<li class="pagination-item"><a href="#" aria-label="Третья страница каталога">3</a></li>
+					<li class="pagination-item"><a href="#" aria-label="Следующая страница каталога">Следующая</a></li>
 				</ul>
 			</section>
 			<section>
@@ -262,9 +263,9 @@
 					Все права защищены
 				</p>
 				<ul class="footer-social">
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
+					<li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+					<li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
 				</ul>
 				<p>
 					<b>Обратная связь:</b>
