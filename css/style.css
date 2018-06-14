@@ -274,7 +274,9 @@ a {
 	height:123px;
 	
 	background-color: #ffbf47;
-	background-image: url("img/svg-technomart/icon-1.svg");
+	background-image: url("../img/svg-technomart/icon-1.svg");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 
 .range-tool {
@@ -282,38 +284,50 @@ a {
 	height:123px;
 	
 	background-color: #3bbce3;
-	background-image: url("img/svg-technomart/icon-2.svg");
+	background-image: url("../img/svg-technomart/icon-2.svg");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .range-equipment {
 	width:300px;
 	height:123px;
 	
 	background-color: #dc91d8;
-	background-image: url("img/svg-technomart/icon-3.svg");
+	background-image: url("../img/svg-technomart/icon-3.svg");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .range-discounts {
 	width:300px;
 	height:123px;
 	
 	background-color: #8ed78f;
-	background-image: url("img/svg-technomart/icon-4.svg");
+	background-image: url("../img/svg-technomart/icon-4.svg");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .range-delivery {
 	width:300px;
 	height:123px;
 	
 	background-color: #ffc047;
-	background-image: url("img/svg-technomart/icon-5.svg");
+	background-image: url("../img/svg-technomart/icon-5.svg");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .slider1,
 .slider2 {
 	background-color: #000000;
 }
 .slider1{
-	background-image: url("img/man1.jpg");
+	background-image: url("../img/man1.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
 }
 .slider2{
-	background-image: url("img/man2.jpg");
+	background-image: url("../img/man2.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
 }
 .slider h3 {
 	color:#ffffff;
@@ -476,13 +490,19 @@ a {
 	font-weight: 400;
 }
 .services-delivery {
-	background-image: url("img/track.png");
+	background-image: url("../img/track.png");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .services-guarantee {
-	background-image: url("img/medal.png");
+	background-image: url("../img/medal.png");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 .services-credit {
-	background-image: url("img/money.png");
+	background-image: url("../img/kredit.png");
+	background-repeat:no-repeat;
+	background-position:right;
 }
 												/*Стили блоков о компании и контактах*/
 .basic-info h2,
