@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -46,10 +45,7 @@
 			</div>
 			<div class="communications">
 				<p class="communications-present">Интернет магазин строительных материалов и инструментов для ремонта</p>
-				<a href="tel:+78125550555" class="communications-tel">
-					<img src="img/svg-technomart/icon-phone.svg" alt="Телефон">
-					+7(812)555-05-55
-				</a>
+				<a href="tel:+78125550555" class="communications-tel">+7(812)555-05-55</a>
 				<p class="communications-adres">г. Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
 				<div class="communications-id-block">
 					<div class="communications-name-exit">
@@ -102,8 +98,10 @@
 				<form method="get" action="https://echo.htmlacademy.ru" class="filter-form">
 					<fieldset class="price-form">
 						<legend>Цена:</legend>
-						<input id="price1" type="text" name="price" value="0">
-						<input id="price2" type="text" name="price" value="30000">
+						<input id="price1" type="number" name="pricemin" value="0"
+							min="0" max="30000" step="500">
+						<input id="price2" type="number" name="pricemax" value="30000"
+							min="0" max="30000" step="500">
 					</fieldset>
 					<fieldset class="manufacturers-form">
 						<legend>Производители:</legend>
@@ -332,11 +330,8 @@
 		</footer>
 		
 		<section class="added-to-cart">
-			<img src="img/svg-technomart/icon-mark.svg" alt="Товар добавлен в корзину!">		
 			<h2>Товар добавлен в корзину!</h2> 
-			<button type="button" class="added-to-cart-close">
-				<img src="img/svg-technomart/icon-close.svg" alt="Закрыть окно добавления в корзину">
-			</button> 
+			<button type="button" class="added-to-cart-close"></button> 
 			<div class="added-to-cart-buttons">
 				<a href="#" class="button">Оформить заказ</a>
 				<button type="button">Продолжить покупки</button>
