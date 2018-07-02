@@ -93,7 +93,7 @@ a {
 	width:220px;
 	height:5px;
 	
-	
+	left:0px;
 	bottom:-5px;
 	
 	background-color:#b52933;
@@ -288,6 +288,9 @@ img {
 	
 	
 }
+.site-progress .site-progress-no-zero {
+	background-color:#ee3643;
+}
 .site-progress,
 .user-input {
 	list-style:none;
@@ -342,9 +345,9 @@ img {
 	align-items:center;
 	
 	margin:0px;
-	padding:0px;
+	padding:40px 0px;
 	
-	min-height:158px
+	
 }
 											
 .communications-present {
@@ -899,7 +902,7 @@ img {
 
 .popproduct {
 	margin:0px;
-	margin-bottom:20px;
+	
 	padding:0px;
 }									
 .block-caption {
@@ -953,8 +956,8 @@ img {
 	padding-bottom:0px;
 }
 .popproduct-list-block {
-	margin-left:-20px;
-	margin-bottom:-20px;
+	margin-left:0px;
+	margin-bottom:0px;
 }
 .popproduct-list {
 	display:flex;
@@ -969,21 +972,28 @@ img {
 .popproduct-list li {
 	position:relative;
 	
-	flex-basis:220px;
+	width:220px;
 	
 	height:318px;
 	
 	box-sizing:border-box;
 	
 	margin:0px;
-	margin-left:20px;
+	margin-right:20px;
 	margin-bottom:20px;
 	padding:0px;
 	
 	border:1px solid #eaeaea;
 }
+.popproduct-list-index li:nth-child(4n) {
+	margin-right:0px;
+}
+.popproduct-list-catalog li:nth-child(3n) {
+	margin-right:0px;
+}
 .popproduct-list li:hover {
 	box-shadow:0px 30px 50px 1px rgba(0,0,0,0.3);
+	z-index:2;
 }
 .popproduct-list li:hover img {
 	display:none;
@@ -1171,7 +1181,7 @@ img {
 }
 .popmanufacturers-list li {
 	
-	flex-basis:220px;
+	width:220px;
 	
 	box-sizing:border-box;
 	
@@ -1201,6 +1211,7 @@ img {
 }
 .popmanufacturers-block .popmanufacturers-link:hover {
 	box-shadow:0px 10px 30px 1px rgba(0,0,0,0.3);
+	z-index:2;
 }
 .popmanufacturers-block .popmanufacturers-link:focus {
 	opacity:0.3;
@@ -1284,6 +1295,9 @@ img {
 	color:#ffffff;
 	font-size:21px;
 	line-height:calc(30/21);
+	
+	border-top:1px solid #405069;
+	border-bottom:1px solid #293449;
 }
 .services-list a:hover {
 	background-color:#293449;
@@ -1292,6 +1306,7 @@ img {
 	background-color:#ffffff;
 	
 	color:#32425c;
+	border:none;
 }
 .services h3 {
 	margin:0px;
@@ -1759,7 +1774,7 @@ img {
 .power-form-radio + label::before {
 	content: "";
 	position: absolute;
-	top:5x;
+	top:-3px;
 	left:-1px;
 	width: 25px;
 	height: 25px;
@@ -1798,6 +1813,13 @@ img {
 	background-color: #ffffff;
 	
 	border:1px solid #e5e5e5;
+}
+.filter-form-button:hover {
+	border:1px solid #bdc6ca;
+}
+.filter-form-button:focus {
+	border:1px solid #ee3643;
+	outline:none;
 }
 .sorting {
 	flex-basis:700px;
@@ -1888,7 +1910,7 @@ img {
 	list-style:none;
 	
 	margin:0px;
-	margin-top:51px;
+	margin-top:31px;
 	padding:0px;
 	
 	display:flex;
@@ -2176,12 +2198,18 @@ footer .logo-footer {
 }
 											/*Стили формы записи*/
 .write-popap {
-	position:relative;
+	position:fixed;
+	margin:0px;
+	left:50%;
+	top:50%;
+	margin-left:-310px;
+	margin-top:-215px;
+	z-index:15;
 	
 	width:620px;
 	height:430px;
 	
-	margin:0px;
+	
 	padding:0px;
 	
 	border-top:7px solid #ff5257;
@@ -2259,9 +2287,15 @@ footer .logo-footer {
 
 												/*Стили формы добавления в корзину*/
 .added-to-cart {
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-310px;
+	margin-top:-225px;
+	z-index:15;
 	width:620px;
 	
-	position:relative;
+	
 	
 	background-color:#ffffff;
 	background-image:url("../img/svg-technomart/icon-mark.svg");
@@ -2297,7 +2331,7 @@ footer .logo-footer {
 .added-to-cart-buttons a,
 .added-to-cart-buttons button {
 	box-sizing:border-box;
-	flex-basis:220px;
+	width:220px;
 	padding:13px 20px;
 	border-radius:2px;
 }
@@ -2311,14 +2345,30 @@ footer .logo-footer {
 	background-color:#ffffff;
 	
 	border:none;
-}									
+}
+.added-to-cart-buttons button:hover {
+	color:#ee3643;
+}
+
+.added-to-cart-buttons button:focus {
+	color:rgba(0, 0, 0, 0.3);
+}
+									
 								/*Стили большой карты*/							
 
 .big-map {
-	position:relative;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-470px;
+	margin-top:-225px;
 	width:940px;
 	height:450px;
+	z-index:15;
 	box-shadow:0px 0px 50px 1px rgba(0,0,0,0.3);
+}
+.big-map img {
+	height:100%;
 }								
 .big-map button,
 .write-popap-exit,
@@ -2335,4 +2385,7 @@ footer .logo-footer {
 	background-repeat:no-repeat;
 	
 	border:none;
+}
+.popap-off {
+	display:none;
 }											
