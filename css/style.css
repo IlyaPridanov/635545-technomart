@@ -5,7 +5,7 @@
 
 	font-family:"Cuprum",Arial,sans-serif;
 	font-size:17px;
-	line-height:calc(18/17);
+	line-height:1.06;
 	font-weight:400;
 	color:#000000;
 	
@@ -18,7 +18,7 @@ a {
 .button {
 	color:#ffffff;
 	font-size:14px;
-	line-height:calc(18/14);
+	line-height:1.29;
 	text-transform:uppercase;
 	text-align:center;
 	vertical-align:middle;
@@ -27,10 +27,10 @@ a {
 	
 	border-radius:2px;
 }
-.button:hover  {
+.button:hover {
 	background-color:#ca2c37;
 }
-.button:focus  {
+.button:focus {
 	background-color:#ba2732;
 }
 .visually-hidden {
@@ -55,7 +55,7 @@ a {
 	color:#32425c;
 	font-size:30px;
 	font-weight:400;
-	line-height:calc(30/30);
+	line-height:1;
 	text-transform:uppercase;
 }
 .logo {
@@ -72,16 +72,13 @@ a {
 	
 	color:#ffffff;
 	font-size:24px;
-	line-height:calc(24/24);
+	line-height:1;
 	font-weight:400;
 	text-transform:uppercase;
 	text-decoration:none;
 	text-align:center;
 	
 	background-color:#ee3643;
-	
-	/*border-bottom:5px solid #b52933;*/
-	
 }
 .logo::after {
 	
@@ -97,21 +94,16 @@ a {
 	bottom:-5px;
 	
 	background-color:#b52933;
-	
 }
 
 .logo:hover {
 	background-color:#ca2c37;
-	
-	
 }
 .logo:hover::after {
 	background-color:#9a212a;
 }
 .logo:focus {
 	background-color:#ba2732;
-	
-	
 }
 .logo:focus::after {
 	background-color:#8e1e26;
@@ -140,12 +132,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
-
-
 											/*Стили хэдера*/
 .main-header {
 	margin:0px;
@@ -168,21 +154,15 @@ img {
 	margin:0px;
 	padding:0px;
 	
-	
 	min-height:42px;
 	background-color:#293449;
 }
-
-
-
 											/*Стили Формы поиска*/
 
 .header-head-flex {
 	display:flex;
 	justify-content:space-between;
-}											
-											
-
+}																					
 .search-form {
 	flex-basis:270px;
 	
@@ -190,7 +170,6 @@ img {
 	
 	margin-right:auto;
 	padding:0px;
-	
 }										
 .search-form-input:hover+svg path {
 	fill:#ffffff;
@@ -221,6 +200,12 @@ img {
 .search-form-input::-webkit-input-placeholder {
 	color:#ffffff;
 }
+.search-form-input:-ms-input-placeholder {
+	color:#ffffff;
+}
+.search-form-input::-ms-input-placeholder {
+	color:#ffffff;
+}
 .search-form-input:-moz-placeholder {
 	color:#ffffff;
 }
@@ -241,6 +226,12 @@ img {
 .search-form-input:focus::-webkit-input-placeholder {
 	color:#000000;
 }
+.search-form-input:focus:-ms-input-placeholder {
+	color:#000000;
+}
+.search-form-input:focus::-ms-input-placeholder {
+	color:#000000;
+}
 .search-form-input:focus:-moz-placeholder {
 	color:#000000;
 }
@@ -256,21 +247,14 @@ img {
 	
 	margin:0px;
 	padding:0px;
-	
-	
 }
 .site-progress li {
-	
 	flex-basis:150px;
 	
 	text-align:center;
 	
-	
-	
 	margin:0px;
 	padding:0px;
-	
-	
 }
 .site-progress a {
 	display:block;
@@ -279,14 +263,12 @@ img {
 	position:relative;
 	color:#ffffff;
 	font-size:17px;
-	line-height:calc(18/17);
+	line-height:1.06;
 	font-weight:400;
 	
 	height:100%;
 	
 	padding-top:12px;
-	
-	
 }
 .site-progress .site-progress-no-zero {
 	background-color:#ee3643;
@@ -315,7 +297,6 @@ img {
 .site-progress a:hover circle {
 	fill:#ffffff;
 }
-
 .site-progress a:focus {
 	color:rgba(250, 250, 250, 0.6);
 	
@@ -325,14 +306,12 @@ img {
 .site-progress a:focus circle {
 	fill:#8b8e94;
 }
-
  .site-progress .order {
 	background-color:#63a63e;
 }
 .site-progress .order:hover {
 	background-color:#5fbb2d;
 }
-
 .site-progress .order:focus {
 	background-color:#518534;
 	
@@ -346,10 +325,10 @@ img {
 	
 	margin:0px;
 	padding:40px 0px;
-	
-	
 }
-											
+.center-block .communications-catalog {
+	padding:39px 0px;
+}										
 .communications-present {
 	flex-basis:200px;
 	
@@ -362,7 +341,7 @@ img {
 	
 	color:#ee3643;
 	font-size:16px;
-	line-height:calc(23/16);
+	line-height:1.44;
 	font-weight:400;
 	font-style:italic;
 }
@@ -372,6 +351,12 @@ img {
     margin-bottom: 0px;
     margin-left: 40px;
 	padding:0px;
+}
+.communications .tel-adres-catalog {
+	margin-top: 2px;
+    margin-right: 23px;
+    margin-bottom: 0px;
+    margin-left: 40px;
 }
 .communications-tel {
 	display: block;
@@ -391,7 +376,7 @@ img {
 	
     color: #e9292a;
     font-size: 21px;
-    line-height: calc(21/21);
+    line-height: 1;
 	
     background-image: url(../img/svg-technomart/icon-phone.svg);
     background-repeat: no-repeat;
@@ -399,7 +384,6 @@ img {
 	
     border: 3px solid #ffffff;
 }
-
 .communications-adres {
 	box-sizing: border-box;
 	
@@ -415,10 +399,8 @@ img {
 	
 	color:#32425c;
 	font-size:14px;
-	line-height:calc(24/14);
-	text-align:center;
-	
-	
+	line-height:1.71;
+	text-align:center;	
 }
 .user-input {
 	display:flex;
@@ -432,23 +414,15 @@ img {
 	
 	color:#000000;
 	font-size:21px;
-	line-height:calc(21/21);
-	
-}
-.login-list {
-	
-}
-.checkin-list {
-	
+	line-height:1;
 }
 .login-link,
 .checkin-link {
 	display:block;
 	
-	
 	color:#000000;
 	font-size:21px;
-	line-height:calc(21/21);
+	line-height:1;
 	
 	background-color:#ffffff;
 }
@@ -478,9 +452,6 @@ img {
 .user-input a:focus path {
 	fill:#c5c5c5;
 }
-
-
-
 
 												/*Стили навигации хедера*/
 .main-navigation {
@@ -516,10 +487,9 @@ img {
 	padding-bottom:18px;
 	color:#ffffff;
 	font-size:17px;
-	line-height:calc(17/17);
+	line-height:1;
 	
 	margin:0px;
-	
 }
 .site-navigation a:hover {
 	background-color:#293449;
@@ -556,7 +526,6 @@ img {
 	position:absolute;
 	top:3px;
 	left:0px;
-	
 }
 .communications-name-exit a {
 	margin:0px;
@@ -564,7 +533,7 @@ img {
 	
 	color:#000000;
 	font-size:21px;
-	line-height:calc(21/21);
+	line-height:1;
 }
 .communications-name-exit a:hover {
 	color:#000000;
@@ -595,7 +564,7 @@ img {
 .communications-id-list a {
 	color:#32425c;
 	font-size:16px;
-	line-height:calc(18/16);
+	line-height:1.13;
 	text-decoration:underline;
 }
 .communications-id-list .communications-id-list-orders {
@@ -662,10 +631,9 @@ img {
 	
 	padding:0px;
 	
-	
 	color:#ffffff;
 	font-size:24px;
-	line-height:calc(30/24);
+	line-height:1.25;
 	font-weight:700;
 }
 .range-block a {
@@ -685,7 +653,7 @@ img {
 	
 	color:#ffffff;
 	font-size:14px;
-	line-height:calc(18/14);
+	line-height:1.29;
 	text-transform:uppercase;
 	text-decoration:none;
 	text-align:center;
@@ -693,7 +661,6 @@ img {
 	background-color:rgba(0,0,0,0.1);
 	
 	border-radius:2px;
-	
 }
 .range-block a:hover {
 	background-color:rgba(0,0,0,0.2);
@@ -804,7 +771,7 @@ img {
 	
 	color:#ffffff;
 	font-size:36px;
-	line-height:calc(36/36);
+	line-height:1;
 	text-transform:uppercase;
 	font-weight: 700;
 }
@@ -816,7 +783,7 @@ img {
 	
 	color:#ffffff;
 	font-size:18px;
-	line-height:calc(24/18);
+	line-height:1.33;
 }
 .slider-link {
 	display:block;
@@ -828,7 +795,6 @@ img {
 	
 	width:195px;
 	height:38px;
-	
 }
 .slider-button {
 	display:flex;
@@ -925,16 +891,12 @@ img {
 .block-caption h2{
 	box-sizing:border-box;
 	
-	
 	margin-top:0px;
 	margin-left:0px;
 	margin-right:0px;
 	margin-bottom:0px;
 	
 	padding:0px;
-	
-	
-	
 }
 .block-caption a {
 	box-sizing:border-box;
@@ -1003,18 +965,13 @@ img {
 	display:block;
 }
 .img-purchase-block {
-	
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	
 	height:179px;
-	
-	
 }
 .popproduct-list img {
-	
-	
 	margin:0px;
 	padding:0px;
 }
@@ -1031,7 +988,6 @@ img {
 .purchase-block a {
 	position:absolute;
     
-	
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -1048,7 +1004,7 @@ img {
 	border-radius:2px;
 	font-weight:400;
 	font-size:14px;
-	line-height:calc(18/14);
+	line-height:1.29;
 	text-transform:uppercase;
 }
 .purchase {
@@ -1079,15 +1035,10 @@ img {
 	top:90px;
     left:41px;
 	
-	
 	color:#32425c;
     background-color:#ffffff;
     border-bottom-color:#63a63e;
 	
-	
-	
-	
-
 	border:3px solid #63a63e;
 }
 .bookmarks:hover {
@@ -1112,7 +1063,7 @@ img {
 	font-weight:700;
 	color:#000000;
 	font-size:18px;
-	line-height:calc(20/18);
+	line-height:1.11;
 	text-align:center;
 }
 .popproduct-list b {
@@ -1128,7 +1079,7 @@ img {
 	font-weight:700;
 	color:#a9a9a9;
 	font-size:17px;
-	line-height:calc(18/17);
+	line-height:1.06;
 	text-decoration:line-through;
 }
 .price {
@@ -1148,16 +1099,13 @@ img {
 	font-weight:700;
 	color:#ffffff;
 	font-size:17px;
-	line-height:calc(18/17);
+	line-height:1.06;
 	text-align:center;
 	
 	background-image:url("../img/svg-technomart/red-button.svg");
 	background-repeat:no-repeat;
 	background-position:center;
 }
-
-
-
 
 							/*Стили блока поулярных производителей*/
 .popmanufacturers {
@@ -1223,7 +1171,6 @@ img {
 	padding:0px;
 	padding-top:65px;
 	
-	
 	background-color:#f4f8fa;
 }
 .services h2 {
@@ -1233,7 +1180,7 @@ img {
 	
 	color:#000000;
 	font-size:30px;
-	line-height:calc(30/30);
+	line-height:1;
 	text-transform:uppercase;
 }
 .services p {
@@ -1247,7 +1194,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(24/13);
+	line-height:1.85;
 }
 .services-slider {
 	display:flex;
@@ -1274,7 +1221,7 @@ img {
 	background-image:url("../img/shadow-service.png");
 	background-repeat:no-repeat;
 }
-.services-list li{
+.services-list li {
 	margin:0px;
 	padding:0px;
 }
@@ -1294,7 +1241,7 @@ img {
 	font-weight:700;
 	color:#ffffff;
 	font-size:21px;
-	line-height:calc(30/21);
+	line-height:1.43;
 	
 	border-top:1px solid #405069;
 	border-bottom:1px solid #293449;
@@ -1315,7 +1262,7 @@ img {
 	
 	color:#32425c;
 	font-size:36px;
-	line-height:calc(36/36);
+	line-height:1;
 	text-transform:uppercase;
 	font-weight:400;
 }
@@ -1374,8 +1321,6 @@ img {
 	text-align:center;
 	
 }
-
-
 												/*Стили блоков о компании*/
 
 
@@ -1385,12 +1330,10 @@ img {
 	
 	margin:0px;
 	padding:0px;
-	
 }	
 .basic-info {
 	margin:0px;
 	padding:0px;
-	
 }
 											
 .basic-info h2,
@@ -1401,7 +1344,7 @@ img {
 	
 	color:#000000;
 	font-size:30px;
-	line-height:calc(30/30);
+	line-height:1;
 	text-transform:uppercase;
 	font-weight:400;
 }
@@ -1414,7 +1357,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(24/13);
+	line-height:1.85);
 }
 .basic-info .man-shop {
 	width:522px;
@@ -1431,7 +1374,6 @@ img {
 	margin-bottom:37px;
 	padding:0px;
 }
-
 .transport-companies li {
 	position:relative;
 	
@@ -1444,7 +1386,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:18px;
-	line-height:calc(20/18);
+	line-height:1.11;
 }
 .transport-companies li::before {
 	content:"";
@@ -1463,8 +1405,6 @@ img {
 	width:220px;
 	padding:10px 0px;
 }
-
-
 											/*Стили блоков о контактах*/
 
 .contacts {
@@ -1499,10 +1439,6 @@ img {
 	width:300px;
 	height:38px;
 }
-
-
-
-
 									/*Стили майна каталога*/
 
 .container-catalog h2 {
@@ -1549,7 +1485,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	text-transform:uppercase;
 }
 .breadcrumbs-home {
@@ -1580,7 +1516,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	text-transform:uppercase;
 	
 	background-color:#f7f3ec;
@@ -1590,13 +1526,11 @@ img {
 	padding:0px;
 }
 .filter-form legend {
-	
-	
 	font-family:"PT Sans",Arial,sans-serif;
 	font-weight:700;
 	color:#000000;
 	font-size:17px;
-	line-height:calc(30/17);
+	line-height:1.76;
 	text-transform:uppercase;
 }								
 .price-form,
@@ -1609,7 +1543,7 @@ img {
 	margin-bottom:16px;
 	border-bottom:1px solid #e5e5e5;
 }
-.price-form legend{
+.price-form legend {
 	margin-bottom:14px;
 }
 .price-block {
@@ -1676,7 +1610,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:17px;
-	line-height:calc(18/17);
+	line-height:1.06;
 	text-transform:uppercase;
 	
 	background-color:#f7f3ec;
@@ -1690,13 +1624,10 @@ img {
 	margin-bottom:17px;
 	padding:0px;
 	
-	
 	border:none;
 	
 	border-bottom:1px solid #e5e5e5;
 }
-									
-
 .manufacturers-form legend {
 	margin-bottom:14px;
 }
@@ -1709,7 +1640,7 @@ img {
 .manufacturers-form-list {
 	margin-bottom:23px;
 }
-.manufacturers-form-list li{
+.manufacturers-form-list li {
 	margin-bottom:21px;
 }	
 .power-form-list label,
@@ -1722,12 +1653,11 @@ img {
 
 	cursor: pointer;
   
-	
 	font-family:"PT Sans",Arial,sans-serif;
 	font-weight:400;
 	color:#000000;
 	font-size:15px;
-	line-height:calc(20/15);
+	line-height:1.33;
 	text-transform:uppercase;
 }
 .power-form-list label:disabled,
@@ -1748,6 +1678,14 @@ img {
 	background-image:url("../img/svg-technomart/checkbox-off.svg");
 	background-repeat:no-repeat;
 	background-position:center;
+	
+	opacity:0.7;
+}
+.manufacturers-form-checkbox + label:hover::before {
+	opacity:1;
+}
+.manufacturers-form-checkbox + label:disabled::before {
+	opacity:0.3;
 }
 .manufacturers-form-checkbox:checked + label::before {
 	content: "";
@@ -1760,7 +1698,14 @@ img {
 	background-image:url("../img/svg-technomart/checkbox-on.svg");
 	background-repeat:no-repeat;
 	background-position:center;
-
+	
+	opacity:0.7;
+}
+.manufacturers-form-checkbox:checked + label:hover::before {
+	opacity:1;
+}
+.manufacturers-form-checkbox:checked + label:disabled::before {
+	opacity:1;
 }
 .power-form {
 	margin-bottom:60px;
@@ -1782,6 +1727,14 @@ img {
 	background-image:url("../img/svg-technomart/radio-off.svg");
 	background-repeat:no-repeat;
 	background-position:center;
+	
+	opacity:0.7;
+}
+.power-form-radio + label:hover::before {
+	opacity:1;
+}
+.power-form-radio + label:disabled::before {
+	opacity:0.3;
 }
 .power-form-radio:checked + label::before {
 	content: "";
@@ -1795,6 +1748,13 @@ img {
 	background-repeat:no-repeat;
 	background-position:center;
 
+	opacity:0.7;
+}
+.power-form-radio:checked + label:hover::before {
+	opacity:1;
+}
+.power-form-radio:checked + label:disabled::before {
+	opacity:0.3;
 }
 .power-form-radio {
 	display:none;
@@ -1807,7 +1767,7 @@ img {
 	font-weight: 400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	text-transform:uppercase;
 	
 	background-color: #ffffff;
@@ -1844,7 +1804,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	text-transform:uppercase;
 }	
 .sorting-navigation-list,
@@ -1879,7 +1839,7 @@ img {
 	font-weight:400;
 	color:rgba(0, 0, 0, 0.3);
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	text-transform:uppercase;
 	
 	border-bottom:1px dotted #ee3643;
@@ -1930,7 +1890,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 	
 	border:1px solid #e5e5e5;
 	
@@ -1975,7 +1935,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:calc(24/13);
+	line-height:1.85;
 }
 
 												/*Стили верха футера*/
@@ -1997,7 +1957,6 @@ body .footer-catalog {
 	
 	margin:0px;
 	padding:0px;
-	
 }
 footer .logo-footer {
 	height:63px;
@@ -2036,7 +1995,7 @@ footer .logo-footer {
 	font-weight:400;
 	color:#f3f7f9;
 	font-size:18px;
-	line-height:calc(24/13);
+	line-height:1.85;
 }
 .footer-site-navigation a:hover {
 	color:#f3f7f9;
@@ -2058,7 +2017,7 @@ footer .logo-footer {
 	font-weight:400;
 	color:#f3f7f9;
 	font-size:18px;
-	line-height:calc(24/18);
+	line-height:1.33;
 }
 
 .footer-content-navigation a {
@@ -2068,7 +2027,7 @@ footer .logo-footer {
 	font-weight:400;
 	color:#ffd180;
 	font-size:18px;
-	line-height:calc(24/18);
+	line-height:1.33;
 }
 .footer-content-navigation a:hover {
 	text-decoration:underline;
@@ -2095,7 +2054,7 @@ footer .logo-footer {
 	box-sizing:border-box;
 	
 	margin:0px;
-	padding:36px 0px;
+	padding:22px 0px;
 }
 .footer-copyright-company {
 	margin:0px;
@@ -2104,26 +2063,24 @@ footer .logo-footer {
 	color:#ffffff;
 	font-weight:400;
 	font-size:16px;
-	line-height:calc(18/16);
+	line-height:1.13;
 }
 .footer-social {
 	display:flex;
 	
-	
 	list-style:none;
 	
 	margin:0px;
-	margin-left:130px;
+	margin-top:0px;
+	margin-left:122px;
 	padding:0px;
 }
 .footer-social li {
-	flex-basis:42px;
+	width:42px;
 	
 	margin:0px;
-	margin-left:-2px;
+	margin-left:4px;
 	padding:0px;
-	
-	
 }
 .footer-social a {
 	display:block;
@@ -2135,17 +2092,17 @@ footer .logo-footer {
 	padding:0px;
 	background-color:#212a3a;
 }
-.vkontakte{
+.vkontakte {
 	background-image:url("../img/svg-technomart/icon-vk.svg");
 	background-repeat:no-repeat;
 	background-position:center;
 }
-.facebook{
+.facebook {
 	background-image:url("../img/svg-technomart/icon-fb.svg");
 	background-repeat:no-repeat;
 	background-position:center;
 }
-.instagram{
+.instagram {
 	background-image:url("../img/svg-technomart/icon-insta.svg");
 	background-repeat:no-repeat;
 	background-position:center;
@@ -2155,15 +2112,20 @@ footer .logo-footer {
 	background-color:#ee3643;
 }
 .footer-down .footer-communications {
-	flex-basis:150px;
+	width:150px;
 	margin-left:75px;
 }
 .footer-copyright {
-	flex-basis:106px;
+	width:106px;
 }
-.footer-communications,
+.footer-communications {
+	margin-top:14px;
+	margin-right:0px;
+	padding:0px;
+}
 .footer-copyright {
-	margin:0px;
+	margin-top:9px;
+	margin-right:4px;
 	padding:0px;
 }
 .footer-communications b,
@@ -2174,7 +2136,7 @@ footer .logo-footer {
 	color:#ffffff;
 	font-weight: 400;
 	font-size:16px;
-	line-height:calc(18/16);
+	line-height:1.13;
 }
 .footer-communications a,
 .footer-copyright a {
@@ -2184,7 +2146,7 @@ footer .logo-footer {
 	color:#e0b976;
 	font-weight:400;
 	font-size:16px;
-	line-height:calc(18/16);
+	line-height:1.13;
 }
 .footer-communications a:hover,
 .footer-copyright a:hover {
@@ -2198,6 +2160,7 @@ footer .logo-footer {
 }
 											/*Стили формы записи*/
 .write-popap {
+	display:none;
 	position:fixed;
 	margin:0px;
 	left:50%;
@@ -2208,7 +2171,6 @@ footer .logo-footer {
 	
 	width:620px;
 	height:430px;
-	
 	
 	padding:0px;
 	
@@ -2253,7 +2215,7 @@ footer .logo-footer {
 	color:#000000;
 	font-weight:400;
 	font-size:18px;
-	line-height:calc(18/18);
+	line-height:1;
 }
 .write-popap input,
 .write-popap textarea {
@@ -2262,8 +2224,6 @@ footer .logo-footer {
 	padding:12px;
 	box-sizing:border-box;
 	width:100%;
-	
-	
 	
 	border:2px solid #dee3e4;
 	border-radius:3px;
@@ -2274,7 +2234,23 @@ footer .logo-footer {
 	font-weight:400;
 	color:#a9a9a9;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
+}
+.write-popap input:-ms-input-placeholder,
+.write-popap textarea:-ms-input-placeholder {
+	font-family:"PT Sans",Arial,sans-serif;
+	font-weight:400;
+	color:#a9a9a9;
+	font-size:13px;
+	line-height:1.38;
+}
+.write-popap input::-ms-input-placeholder,
+.write-popap textarea::-ms-input-placeholder {
+	font-family:"PT Sans",Arial,sans-serif;
+	font-weight:400;
+	color:#a9a9a9;
+	font-size:13px;
+	line-height:1.38;
 }
 .write-popap input:-moz-placeholder,
 .write-popap textarea:-moz-placeholder {
@@ -2282,11 +2258,12 @@ footer .logo-footer {
 	font-weight:400;
 	color:#a9a9a9;
 	font-size:13px;
-	line-height:calc(18/13);
+	line-height:1.38;
 }
 
 												/*Стили формы добавления в корзину*/
 .added-to-cart {
+	display:none;
 	position:fixed;
 	left:50%;
 	top:50%;
@@ -2294,8 +2271,6 @@ footer .logo-footer {
 	margin-top:-225px;
 	z-index:15;
 	width:620px;
-	
-	
 	
 	background-color:#ffffff;
 	background-image:url("../img/svg-technomart/icon-mark.svg");
@@ -2314,7 +2289,7 @@ footer .logo-footer {
 	color:#000000;
 	font-weight:400;
 	font-size:30px;
-	line-height:calc(30/30);
+	line-height:1;
 }
 .added-to-cart-close {
 	background-color:#ffffff;
@@ -2339,7 +2314,7 @@ footer .logo-footer {
 	color:#000000;
 	font-weight:400;
 	font-size:14px;
-	line-height:calc(18/14);
+	line-height:1.29;
 	text-transform:uppercase;
 	
 	background-color:#ffffff;
@@ -2357,6 +2332,7 @@ footer .logo-footer {
 								/*Стили большой карты*/							
 
 .big-map {
+	display:none;
 	position:fixed;
 	left:50%;
 	top:50%;
@@ -2386,6 +2362,6 @@ footer .logo-footer {
 	
 	border:none;
 }
-.popap-off {
-	display:none;
+.popap-on {
+	display:block;
 }											
