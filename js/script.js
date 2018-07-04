@@ -28,11 +28,11 @@ var isStorageSupport = true;
 
 var storage = "";
   
-  try {
-    storage = localStorage.getItem("name");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+try {
+	storage = localStorage.getItem("name");
+} catch (err) {
+	isStorageSupport = false;
+}
 
 //var close_purchase = popup_purchase.querySelector(".added-to-cart-close");
 	
@@ -45,14 +45,14 @@ link_write.addEventListener("click", function (evt) {
 		} else {
 		name_write.focus();
 		//mail_write.value = storage;
-    }
+	}
 	name_write.focus();
-	});
+});
 	
 link_map.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup_map.classList.add("popap-on");
-	});
+});
 
 //link_purchase.addEventListener("click", function (evt) {
 	//evt.preventDefault();
@@ -60,36 +60,36 @@ link_map.addEventListener("click", function (evt) {
 	//});
 	
 close_write.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup_write.classList.remove("popap-on");
-	});
+	evt.preventDefault();
+	popup_write.classList.remove("popap-on");
+});
   
 close_map.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup_map.classList.remove("popap-on");
-	});
+	evt.preventDefault();
+	popup_map.classList.remove("popap-on");
+});
 	
 form.addEventListener("submit", function (evt) {
     evt.preventDefault();
 	if (!name_write.value || !mail_write.value || !textmail_write.value) {
 		evt.preventDefault();
 		console.log("Нужно ввести логин и пароль");
-    } 	else {
+	} else {
 		if (isStorageSupport) { 
 			localStorage.setItem("name", name_write.value);
 			localStorage.setItem("mail", mail_write.value); 
-		}
-    }
-	});
+	}
+	}
+});
  
- window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup_write.classList.contains("popup-on")) {
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (popup_write.classList.contains("popup-on")) {
         popup_write.classList.remove("popup-on");
-      }
-    }
-  });
+		}
+	}
+});
 
   
  //close_purchase.addEventListener("click", function (evt) {
