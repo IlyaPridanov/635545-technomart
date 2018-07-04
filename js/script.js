@@ -27,7 +27,7 @@ var close_map = popup_map.querySelector(".big-map-close");
 var isStorageSupport = true;
 
 var storage = "";
-  
+
 try {
 	storage = localStorage.getItem("name");
 } catch (err) {
@@ -42,7 +42,7 @@ link_write.addEventListener("click", function (evt) {
 	if (storage) {
 		name_write.value = storage;
 		mail_write.focus();
-		} else {
+	} else {
 		name_write.focus();
 		//mail_write.value = storage;
 	}
@@ -70,7 +70,7 @@ close_map.addEventListener("click", function (evt) {
 });
 	
 form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+	evt.preventDefault();
 	if (!name_write.value || !mail_write.value || !textmail_write.value) {
 		evt.preventDefault();
 		console.log("Нужно ввести логин и пароль");
@@ -78,7 +78,7 @@ form.addEventListener("submit", function (evt) {
 		if (isStorageSupport) { 
 			localStorage.setItem("name", name_write.value);
 			localStorage.setItem("mail", mail_write.value); 
-	}
+		}
 	}
 });
  
@@ -86,13 +86,13 @@ window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		evt.preventDefault();
 		if (popup_write.classList.contains("popup-on")) {
-        popup_write.classList.remove("popup-on");
+		popup_write.classList.remove("popup-on");
 		}
 	}
 });
 
   
- //close_purchase.addEventListener("click", function (evt) {
-    //evt.preventDefault();
-    //popup_purchase.classList.remove("popap-on");
+	//close_purchase.addEventListener("click", function (evt) {
+	//evt.preventDefault();
+	//popup_purchase.classList.remove("popap-on");
 	//});

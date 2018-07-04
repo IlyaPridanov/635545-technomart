@@ -11,9 +11,8 @@
 	
 	background-color:#ffffff;
 }
-
 a {
-  text-decoration:none;
+	text-decoration:none;
 }
 .button {
 	color:#ffffff;
@@ -129,8 +128,8 @@ a {
 	display:none;
 }
 img {
-  max-width:100%;
-  height:auto;
+	max-width:100%;
+	height:auto;
 }
 											/*Стили хэдера*/
 .main-header {
@@ -863,14 +862,14 @@ img {
 	background-image:url("../img/svg-technomart/icon-right.svg");
 	background-repeat:no-repeat;
 	background-position:center;
-}								
+}
 									/*Стили блока популярных товаров*/
 
 .popproduct {
 	margin:0px;
 	
 	padding:0px;
-}									
+}
 .block-caption {
 	display:flex;
 	justify-content:space-between;
@@ -1190,7 +1189,7 @@ img {
 	
 	width:400px;
 	
-	font-family:'PT Sans',Arial,sans-serif;
+	font-family:"PT Sans",Arial,sans-serif;
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
@@ -1357,7 +1356,7 @@ img {
 	font-weight:400;
 	color:#000000;
 	font-size:13px;
-	line-height:1.85);
+	line-height:1.85;
 }
 .basic-info .man-shop {
 	width:522px;
@@ -1631,7 +1630,7 @@ img {
 .manufacturers-form legend {
 	margin-bottom:14px;
 }
-.power-form-list ,
+.power-form-list,
 .manufacturers-form-list {
 	list-style:none;
 	margin:0px;
@@ -1770,7 +1769,7 @@ img {
 	line-height:1.38;
 	text-transform:uppercase;
 	
-	background-color: #ffffff;
+	background-color:#ffffff;
 	
 	border:1px solid #e5e5e5;
 }
@@ -1794,7 +1793,7 @@ img {
 	padding:10px 19px;
 	padding-right:16px;
 	
-	background-color: #f7f3ec;
+	background-color:#f7f3ec;
 }
 .sorting-navigation h3 {
 	margin:0px;
@@ -1982,7 +1981,7 @@ footer .logo-footer {
 	padding:0px;
 }
 .footer-site-navigation li,
-.footer-content-navigation li{
+.footer-content-navigation li {
 	margin:0px;
 	padding:0px;
 	padding-left:59px;
@@ -2352,7 +2351,7 @@ footer .logo-footer {
 	top:0;
 	left:0;
 	z-index:1;
-  
+
 	height:100%;
 }
 
