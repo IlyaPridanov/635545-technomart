@@ -1,8 +1,6 @@
 var link_write = document.querySelector(".contacts-button");
 
-
-
-//var link_purchase = document.querySelector(".site-progress-basket");
+var link_purchase = document.querySelectorAll(".purchase");
 		
 var popup_write = document.querySelector(".write-popap");
 
@@ -17,8 +15,8 @@ var textmail_write = popup_write.querySelector("[name=textmail]");
 var link_map = document.querySelector(".min-cart");
 
 var popup_map = document.querySelector(".big-map");
-
-//var popup_purchase = document.querySelector(".added-to-cart");
+//33
+var popup_purchase = document.querySelector(".added-to-cart");
 
 var close_write = popup_write.querySelector(".write-popap-exit");
 
@@ -34,7 +32,7 @@ try {
 	isStorageSupport = false;
 }
 
-//var close_purchase = popup_purchase.querySelector(".added-to-cart-close");
+var close_purchase = popup_purchase.querySelector(".added-to-cart-close");
 	
 link_write.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -54,11 +52,12 @@ link_map.addEventListener("click", function (evt) {
 	popup_map.classList.add("popap-on");
 });
 
-//link_purchase.addEventListener("click", function (evt) {
-	//evt.preventDefault();
-	//popup_purchase.classList.add("popap-on");
-	//});
-	
+for (var i = 0; i < link_purchase.length; i++) {
+	link_purchase[i].addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup_purchase.classList.add("popap-on");
+	});
+};
 close_write.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup_write.classList.remove("popap-on");
@@ -91,8 +90,7 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
-  
-	//close_purchase.addEventListener("click", function (evt) {
-	//evt.preventDefault();
-	//popup_purchase.classList.remove("popap-on");
-	//});
+close_purchase.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup_purchase.classList.remove("popap-on");
+});
